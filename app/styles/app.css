@@ -13,3 +13,10 @@
   padding: 10px;
   display:inline-block;
 }
+.enter-number {
+  border: 1px solid;
+  width:30%;
+  padding: 10px;
+  display:inline-block;
+  float:left
+}
