@@ -1,5 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-    data: null
+    data: null,
+
+    actions: {
+      onSeriesDone (data) {
+        this.set('data', data);
+      }
+    }
 });
