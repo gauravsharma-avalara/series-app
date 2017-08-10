@@ -20,12 +20,10 @@ export default Ember.Component.extend({
         for(i=2; i<=val; i++) {
           series[i] = series[i-2] + series[i-1];
         }
-        series = series.join(' | ');
       } else if (type === 'even') {
         for (i = 2; i <= val; i += 2) {
           series.push(i);
         }
-        series = series.join(' | ');
       }
       let onSeriesGenerated = this.get('onSeriesGenerated');
       onSeriesGenerated(series);
